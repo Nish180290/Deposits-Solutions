@@ -4,6 +4,7 @@ import java.nio.charset.Charset;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +20,6 @@ import org.testng.annotations.Test;
 	    
 		private WebDriver newUserPageDriver,allUsersPageDriver; 
 		String newUserPageURL = "http://85.93.17.135:9000";
-//		String allUsersPageUrl = "http://85.93.17.135:9000/users/all";
 
 		@BeforeSuite
 		public void testSetUp() {
@@ -27,7 +27,6 @@ import org.testng.annotations.Test;
 			System.out.println("*******************");
 			System.setProperty("webdriver.chrome.driver", "D:/Deposits-solutions/maven-deposits-solutions/Driver/chromedriver_win32/chromedriver.exe");
 			newUserPageDriver = new ChromeDriver();
-//			allUsersPageDriver= new ChromeDriver();
 			System.out.println("launching chrome browser");
 			newUserPageDriver.manage().window().maximize();
 		}
@@ -51,17 +50,13 @@ import org.testng.annotations.Test;
 			newUserPageDriver.findElement(By.name("user.password")).sendKeys("test11@");
 			newUserPageDriver.findElement(By.name("confirmationPassword")).sendKeys("test11@");
 			newUserPageDriver.findElement(By.xpath("//button[@type='submit']")).click();
-			String getAllUserPageTitle = allUsersPageDriver.getTitle();
-			System.out.println("Page title: - "+getAllUserPageTitle);
-/*			newUserPageDriver.findElement(By.)
-			Assert.assertEquals(allUsersPageUrl., "All User");*/
+//			String getAllUserPageTitle = allUsersPageDriver.getTitle();
+//			System.out.println("Page title: - "+getAllUserPageTitle);
 			System.out.println("user created");
 		}
 
-		private String randomUserNameGenerator() {
-			byte[] array = new byte[7]; // length is bounded by 7
-			    new Random().nextBytes(array);
-			    return new String(array, Charset.forName("UTF-8"));
+		private String randomUserNameGenerator() {			 
+			   return  RandomStringUtils.randomAlphabetic(10);
 		}
 		
 		@Test
@@ -78,7 +73,6 @@ import org.testng.annotations.Test;
 	            System.out.println(InvalidMessage);
 	        }
 			Assert.assertEquals(InvalidMessage, "Required");
-//			user.name.error
 
 		}
 		
