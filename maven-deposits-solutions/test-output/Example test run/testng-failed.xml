@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Example test run]">
+  <test name="Simple Test">
+    <classes>
+      <class name="com.ds.NewUserTests"/>
+    </classes>
+  </test> <!-- Simple Test -->
+  <test name="Simple Test(failed)">
+    <classes>
+      <class name="com.ds.NewUserTests">
+        <methods>
+          <include name="verifyGooglePageTittle"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- com.ds.NewUserTests -->
+    </classes>
+  </test> <!-- Simple Test(failed) -->
+</suite> <!-- Failed suite [Example test run] -->
