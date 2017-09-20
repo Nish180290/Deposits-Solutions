@@ -1,41 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82087" started-at="2017-09-19T18:10:37Z" finished-at="2017-09-19T18:11:59Z">
+  <suite name="Default suite" duration-ms="19999" started-at="2017-09-20T05:27:12Z" finished-at="2017-09-20T05:27:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82087" started-at="2017-09-19T18:10:37Z" finished-at="2017-09-19T18:11:59Z">
+    <test name="Default test" duration-ms="19999" started-at="2017-09-20T05:27:12Z" finished-at="2017-09-20T05:27:32Z">
       <class name="com.ds.NewUserTests">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.ds.NewUserTests@be92ad]" name="testSetUp" is-config="true" duration-ms="5673" started-at="2017-09-19T23:40:31Z" finished-at="2017-09-19T23:40:37Z">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.ds.NewUserTests@70fda8]" name="testSetUp" is-config="true" duration-ms="4851" started-at="2017-09-20T10:57:07Z" finished-at="2017-09-20T10:57:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method status="PASS" signature="createUser()[pri:0, instance:com.ds.NewUserTests@be92ad]" name="createUser" duration-ms="42603" started-at="2017-09-19T23:40:37Z" finished-at="2017-09-19T23:41:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser -->
-        <test-method status="PASS" signature="emptyEmailIDTextBoxValidation()[pri:0, instance:com.ds.NewUserTests@be92ad]" name="emptyEmailIDTextBoxValidation" duration-ms="3813" started-at="2017-09-19T23:41:20Z" finished-at="2017-09-19T23:41:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyEmailIDTextBoxValidation -->
-        <test-method status="PASS" signature="emptyPasswordTextBoxValidation()[pri:0, instance:com.ds.NewUserTests@be92ad]" name="emptyPasswordTextBoxValidation" duration-ms="4746" started-at="2017-09-19T23:41:23Z" finished-at="2017-09-19T23:41:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyPasswordTextBoxValidation -->
-        <test-method status="PASS" signature="emptyUserNameTextBoxValidation()[pri:0, instance:com.ds.NewUserTests@be92ad]" name="emptyUserNameTextBoxValidation" duration-ms="8457" started-at="2017-09-19T23:41:28Z" finished-at="2017-09-19T23:41:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyUserNameTextBoxValidation -->
-        <test-method status="PASS" signature="verifyNewUserPageTitle()[pri:0, instance:com.ds.NewUserTests@be92ad]" name="verifyNewUserPageTitle" duration-ms="4101" started-at="2017-09-19T23:41:37Z" finished-at="2017-09-19T23:41:41Z">
+        <test-method status="PASS" signature="verifyNewUserPageTitle()[pri:1, instance:com.ds.NewUserTests@70fda8]" name="verifyNewUserPageTitle" duration-ms="3618" started-at="2017-09-20T10:57:12Z" finished-at="2017-09-20T10:57:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewUserPageTitle -->
-        <test-method status="PASS" signature="verifyPassword()[pri:0, instance:com.ds.NewUserTests@be92ad]" name="verifyPassword" duration-ms="18311" started-at="2017-09-19T23:41:41Z" finished-at="2017-09-19T23:41:59Z">
+        <test-method status="PASS" signature="createUser()[pri:2, instance:com.ds.NewUserTests@70fda8]" name="createUser" duration-ms="2641" started-at="2017-09-20T10:57:16Z" finished-at="2017-09-20T10:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="checkUniqueUser()[pri:3, instance:com.ds.NewUserTests@70fda8]" name="checkUniqueUser" duration-ms="2629" started-at="2017-09-20T10:57:18Z" finished-at="2017-09-20T10:57:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUniqueUser -->
+        <test-method status="PASS" signature="checkUniqueEmailId()[pri:4, instance:com.ds.NewUserTests@70fda8]" name="checkUniqueEmailId" duration-ms="2620" started-at="2017-09-20T10:57:21Z" finished-at="2017-09-20T10:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUniqueEmailId -->
+        <test-method status="PASS" signature="emptyUserNameTextBoxValidation()[pri:5, instance:com.ds.NewUserTests@70fda8]" name="emptyUserNameTextBoxValidation" duration-ms="2355" started-at="2017-09-20T10:57:23Z" finished-at="2017-09-20T10:57:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUserNameTextBoxValidation -->
+        <test-method status="PASS" signature="emptyEmailIDTextBoxValidation()[pri:6, instance:com.ds.NewUserTests@70fda8]" name="emptyEmailIDTextBoxValidation" duration-ms="2145" started-at="2017-09-20T10:57:26Z" finished-at="2017-09-20T10:57:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyEmailIDTextBoxValidation -->
+        <test-method status="PASS" signature="emptyPasswordTextBoxValidation()[pri:7, instance:com.ds.NewUserTests@70fda8]" name="emptyPasswordTextBoxValidation" duration-ms="2018" started-at="2017-09-20T10:57:28Z" finished-at="2017-09-20T10:57:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPasswordTextBoxValidation -->
+        <test-method status="PASS" signature="verifyPassword()[pri:8, instance:com.ds.NewUserTests@70fda8]" name="verifyPassword" duration-ms="1875" started-at="2017-09-20T10:57:30Z" finished-at="2017-09-20T10:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPassword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ds.NewUserTests@be92ad]" name="tearDown" is-config="true" duration-ms="1550" started-at="2017-09-19T23:41:59Z" finished-at="2017-09-19T23:42:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ds.NewUserTests@70fda8]" name="tearDown" is-config="true" duration-ms="1285" started-at="2017-09-20T10:57:32Z" finished-at="2017-09-20T10:57:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
